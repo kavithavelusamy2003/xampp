@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+        width: 30%;
+        background-color: rgb(47,127,232);
+        padding: 2%;
+        margin: 2%;
+        border-radius: 6px;
+    }
+</style>
+<body>
+    <input type="text" name="firstname" id="fname" value="kavi"/>
+    <div id="container">
+    <p>Lorem ipsum dolor sit</p>
+</div>
+    <button onclick="fun()">change style</button>
+    <button onclick="hide()">Hide</button>
+    <script>
+        let fun=()=>{
+            let inputType=document.getElementById("container");
+            //inputType.setAttribute("placeholder","Enter the name");
+            inputType.setAttribute("class","header");
+            inputType.style.background="blue"
+        console.log(inputType)
+        }
+       
+        let hide=()=>{
+            let inputType=document.getElementById("container");
+            inputType.style.display="none";
+        }
+ </script>
+  </body>
+</html>
